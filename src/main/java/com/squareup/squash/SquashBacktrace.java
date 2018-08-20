@@ -39,7 +39,7 @@ public final class SquashBacktrace {
     return threadList;
   }
 
-  private static List<StackElement> getStacktraceArray(Throwable error) {
+  traceArray(Throwable error) {
     List<StackElement> stackElems = new ArrayList<StackElement>();
     for (StackTraceElement element : error.getStackTrace()) {
       StackElement elementList =
